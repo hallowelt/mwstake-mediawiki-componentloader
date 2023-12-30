@@ -38,7 +38,7 @@ class Bootstrapper {
 			return;
 		}
 
-		foreach ( $this->registry as $regKey => $callback ) {
+		foreach ( $this->registry as $callback ) {
 			call_user_func( $callback );
 		}
 		$this->alreadyInitialized = true;
