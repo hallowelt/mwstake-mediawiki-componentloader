@@ -6,13 +6,13 @@ use UnexpectedValueException;
 
 class Bootstrapper {
 
-	/**
-	 * @var Bootstrapper
-	 */
-	private static $instance = null;
+	/** @var Bootstrapper */
+	private static $instance;
 
+	/** @var array */
 	private $registry = [];
 
+	/** @var bool */
 	private $alreadyInitialized = false;
 
 	private function __construct() {
