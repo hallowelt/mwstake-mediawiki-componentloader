@@ -19,7 +19,6 @@ class Bootstrapper {
 	}
 
 	/**
-	 *
 	 * @return Bootstrapper
 	 */
 	public static function getInstance() {
@@ -30,7 +29,6 @@ class Bootstrapper {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	public function init() {
@@ -45,7 +43,6 @@ class Bootstrapper {
 	}
 
 	/**
-	 *
 	 * @param string $regKey
 	 * @param callable $callback
 	 * @return void
