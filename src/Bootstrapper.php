@@ -6,20 +6,19 @@ use UnexpectedValueException;
 
 class Bootstrapper {
 
-	/**
-	 * @var Bootstrapper
-	 */
-	private static $instance = null;
+	/** @var Bootstrapper */
+	private static $instance;
 
+	/** @var array */
 	private $registry = [];
 
+	/** @var bool */
 	private $alreadyInitialized = false;
 
 	private function __construct() {
 	}
 
 	/**
-	 *
 	 * @return Bootstrapper
 	 */
 	public static function getInstance() {
@@ -30,7 +29,6 @@ class Bootstrapper {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	public function init() {
@@ -45,7 +43,6 @@ class Bootstrapper {
 	}
 
 	/**
-	 *
 	 * @param string $regKey
 	 * @param callable $callback
 	 * @return void
